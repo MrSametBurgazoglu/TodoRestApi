@@ -6,8 +6,8 @@ import (
 )
 
 func SetRouter(e *echo.Echo) {
-	e.POST("/todo/", controller.CreateTodo)
-	e.GET("/todo/", controller.GetTodos)
-	e.PUT("/todo/:id", controller.UpdateTodo)
-	e.DELETE("/todo/:id", controller.DeleteTodo)
+	e.POST("/todo/", controller.CreateTodo)      //create new todo
+	e.GET("/todo/", controller.GetTodos)         //get all todos
+	e.PUT("/todo/:id", controller.UpdateTodo)    //update todo with id
+	e.DELETE("/todo/:id", controller.DeleteTodo) //delete todo with id
 }
